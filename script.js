@@ -10,7 +10,7 @@ function checkInput() {
     });
 
     inputs.forEach(element => {
-
+        element.style.border = "";
         element.style.backgroundImage  = "";
         element.placeholder = "";
         if (element.value == "") {
