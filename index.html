@@ -30,14 +30,22 @@
         <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
       </div>
       <div class="myForm">
-        <input type="text" class="input-form" placeholder="First Name">
-        <p class="msg-error">First Name cannot be empty</p>
-        <input type="text" class="input-form" placeholder="Last Name">
-        <p class="msg-error">Last Name cannot be empty</p>
-        <input type="email" class="input-form" placeholder="Email Address">
-        <p class="msg-error">Looks like this is not an email</p>
-        <input type="password" class="input-form" placeholder="Password">
-        <p class="msg-error">Password cannot be empty</p>
+        <div class="field-first-name">
+          <input type="text" class="input-form" placeholder="First Name" id="input-first-name">
+          <p class="msg-error" id="first-name">First Name cannot be empty</p>
+        </div>
+        <div class="field-last-name">
+          <input type="text" class="input-form" placeholder="Last Name">
+          <p class="msg-error">Last Name cannot be empty</p>
+        </div>
+        <div class="field-email">
+          <input type="email" class="input-form" placeholder="Email Address" id="email">
+          <p class="msg-error">Looks like this is not an email</p>
+        </div>
+        <div class="field-password">
+          <input type="password" class="input-form" placeholder="Password">
+          <p class="msg-error">Password cannot be empty</p>
+        </div>
         <button type="submit">Claim your free trial</button>
         <p id="btn-description">By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p>
       </div>
@@ -51,5 +59,7 @@
       Coded by <a href="#">Abdelhadi</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

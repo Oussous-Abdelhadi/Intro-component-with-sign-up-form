@@ -63,10 +63,8 @@ header {
     margin-bottom: 1rem;
     padding: 1rem 1rem;
     font-weight: 700;
-    background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: right 2em top 50%;
-    cursor: pointer;
 }
 
 button {
@@ -80,6 +78,10 @@ button {
     cursor: pointer;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.15);
     letter-spacing: .1rem;
+}
+
+button:hover {
+    background: rgba(56, 204, 140, .5);
 }
 
 .myForm #btn-description {
@@ -103,7 +105,19 @@ button {
     padding: 0 ;
     font-style: italic;
     font-size: .7rem;
+    display: none;
 }
+
+
+.myForm div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ex-email::-webkit-input-placeholder {
+    color: var(--red);
+ }
 
 
 @media screen and (min-width:900px) {
